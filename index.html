@@ -7,12 +7,13 @@
     <title>wordgame</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h3>Word Game</h3>
         <div class="wordbox">
-            <p>Your Word:</p>
+            <!-- <p>Your Word:</p> -->
             <div class="word"></div>
         </div>
         <div class="guessbox">
@@ -22,8 +23,8 @@
             <button>Submit Guess</button>
         </div>
         <div class="turnsbox">
-            <p>Turns Left:</p>
-            <div class="num">10</div>
+            <p>Lives Left:<span class="num"> 10</span></p>
+            <div id="health"></div>
         </div>
         <div class="guessTracker">
             <p>Already Guessed:</p>
@@ -38,8 +39,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-   <script src="common-words.js"></script>
+    <script src="common-words.js"></script>
+    <!-- <script src="play.js"></script> -->
     <script src="main.js"></script>
+    
    
     
 </body>

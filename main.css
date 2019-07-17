@@ -7,10 +7,11 @@ html {box-sizing: border-box;}
     border: 1px solid black;
     border-radius: 10px;
     font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
     padding-left: 30px;
     padding-bottom: 10px;
     font-size: 32px;
-    margin-top: 100px;
+    margin-top: 50px;
     background: rgb(161, 218, 253);
 
 }
@@ -29,8 +30,10 @@ html {box-sizing: border-box;}
 
 .word {
     letter-spacing: 10px;
-    font-size: 42px;
+    font-size: 52px;
+    text-align: center;
 }
+
 
 h3 {
     font-size: 42px;
@@ -39,5 +42,23 @@ h3 {
 
 .allGuesses {
     letter-spacing: 10px;
+}
+
+#health {
+    content:"";
+    width: 500px;
+    height: 50px;
+    /* background: white; */
+    transition: width 1s;
+    border-radius: 10px;
+    background-image: url('http://www.heypoorplayer.com/wp-content/uploads/2014/06/heart-e1403272720870.png');
+    background-size: contain;
+    background-repeat: repeat;
+    /* margin:0; */
+    /* background-position: right; */
+}
+
+.num {
+    margin-left: 5px;
 }
 
