@@ -1,0 +1,43 @@
+html {box-sizing: border-box;} 
+*, *::before, *::after {box-sizing:inherit;}
+
+.container {
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 32px;
+    margin-top: 100px;
+    background: rgb(161, 218, 253);
+
+}
+
+.guessbox input {
+    width: 50px;
+}
+
+.guessbox button, .guessbox input {
+    font-family: 'Luckiest Guy', cursive;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.word {
+    letter-spacing: 10px;
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.allGuesses {
+    letter-spacing: 10px;
+}
+
