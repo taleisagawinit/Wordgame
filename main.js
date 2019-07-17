@@ -34,11 +34,10 @@ $(document).ready(() => {
     var guessesLeft = 10
     var spacesArray = blankSpaces.split('');
     var wordArray = yourWord.split('')
-    // var wrongGuess = "";
     var allGuesses = "";
     var health = 500;
 
-    //maybe make a constructor function and make all these sounds methods:
+    //maybe make all these sounds methods:
 
     function playWin() {
         var snd = new Audio("https://freesound.org/data/previews/267/267528_5060556-lq.mp3");
@@ -67,8 +66,6 @@ $(document).ready(() => {
 
 
     function wrong() {
-        // alert('Wrong Guess')
-        // wrongGuess = wrongGuess + $("#guess").val()
         allGuesses = allGuesses + $("#guess").val();
         $("#guess").val("")
         guessesLeft--;
@@ -89,7 +86,6 @@ $(document).ready(() => {
             return wonGame();
         }
         playWin();
-        // alert('Correct Guess')
         allGuesses = allGuesses + $("#guess").val();
         $("#guess").val("")
         $(".allGuesses").html(allGuesses);
